@@ -46,13 +46,13 @@ a {
   text-decoration: none;
 }
 
-::after,
+/* ::after,
 ::before,
 :hover,
 :focus {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .container {
   max-width: 1200px;
@@ -87,7 +87,10 @@ a {
   text-decoration: none;
 
   outline-color: transparent;
+
   transition-property: color, outline-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -196,7 +199,10 @@ a {
 
 .link-contact .icon {
   margin-right: 10px;
+
   transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-contact:hover .icon,
@@ -219,7 +225,10 @@ a {
   margin-right: 93px;
 
   outline-color: transparent;
-  transition-property: color, outline-color;
+
+  transition-property: outline-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-accent {
@@ -277,6 +286,8 @@ a {
   padding: 10px 32px;
 
   transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-hero:hover,
@@ -380,6 +391,7 @@ a {
 
 .title-team {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.1875;
 
   margin-bottom: 10px;
@@ -387,6 +399,7 @@ a {
 
 .text-team {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.1875;
 
   margin-bottom: 16px;
@@ -427,11 +440,16 @@ a {
   background-color: var(--white);
 
   transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-social .icon {
   fill: var(--icon);
+
   transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-social:hover,
@@ -464,6 +482,8 @@ a {
   outline-color: transparent;
 
   transition-property: border-color, outline-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-clients .icon,
@@ -471,6 +491,7 @@ a {
   fill: var(--icon);
   transition-property: fill;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-clients:hover .icon,
@@ -579,6 +600,10 @@ a {
   background-color: var(--grey);
 
   padding: 6px 22px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-filter:hover,
@@ -610,6 +635,10 @@ a {
 .card {
   display: block;
   width: 370px;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover,
@@ -638,6 +667,10 @@ a {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-lable {
@@ -653,6 +686,10 @@ a {
   padding: 63px 24px;
 
   transform: translateY(100%);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover .card-thumb::before,
